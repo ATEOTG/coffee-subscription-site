@@ -3,8 +3,13 @@
   align-items: center;
   justify-content: space-between;
   margin: 3em auto;
+  position: relative;
 }
 
 .image {
   width: 50%;
+}
+
+.header nav {
+  position: relative;
 }

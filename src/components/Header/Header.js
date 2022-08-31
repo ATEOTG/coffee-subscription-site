@@ -4,6 +4,7 @@ import MenuIconOpen from "../svg/MenuIconOpen";
 import MenuIconClose from "../svg/MenuIconClose";
 import logo from "../../assets/shared/desktop/logo.svg";
 import classes from "./Header.module.css";
+import DropdownMenu from "./DropdownMenu";
 
 const mobileMenuVariants = {
   hidden: {
@@ -32,7 +33,7 @@ function Header() {
       <img src={logo} className={classes.image} alt="coffee roaster logo" />
 
       <nav>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           {!isMenuOpen && (
             <motion.div
               key="menuOpen"
@@ -44,6 +45,7 @@ function Header() {
               <MenuIconOpen onClick={menuStateHandler} />
             </motion.div>
           )}
+
           {isMenuOpen && (
             <motion.div
               key="menuClose"
@@ -57,6 +59,10 @@ function Header() {
           )}
         </AnimatePresence>
       </nav>
+
+      <AnimatePresence onExitComplete={() => setIsMenuOpen(false)}>
+        {isMenuOpen && <DropdownMenu isMenuOpen={isMenuOpen} />}
+      </AnimatePresence>
     </header>
   );
 }
