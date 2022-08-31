@@ -1,0 +1,20 @@
+.collection-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.collection-cont h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(var(--grey), var(--cream));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.collection-item--cont {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}

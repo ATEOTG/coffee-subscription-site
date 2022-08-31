@@ -1,0 +1,16 @@
+.button {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  background: var(--cyan);
+  color: var(--cream);
+  border: none;
+  border-radius: 6px;
+  padding: 0.8em 2em;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #66d2cf;
+}

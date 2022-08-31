@@ -61,7 +61,7 @@ function Header() {
       </nav>
 
       <AnimatePresence onExitComplete={() => setIsMenuOpen(false)}>
-        {isMenuOpen && <DropdownMenu isMenuOpen={isMenuOpen} />}
+        {isMenuOpen && <DropdownMenu onClick={menuStateHandler} />}
       </AnimatePresence>
     </header>
   );

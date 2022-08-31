@@ -19,7 +19,7 @@ const dropdownVariants = {
   },
 };
 
-function DropdownMenu() {
+function DropdownMenu(props) {
   return (
     <motion.div
       className={classes["dropdown-cont"]}
@@ -31,13 +31,19 @@ function DropdownMenu() {
     >
       <ul>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/home" onClick={props.onClick}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About Us</Link>
+          <Link to="/about" onClick={props.onClick}>
+            About Us
+          </Link>
         </li>
         <li>
-          <Link to="/subscribe">Create Your Plan</Link>
+          <Link to="/subscribe" onClick={props.onClick}>
+            Create Your Plan
+          </Link>
         </li>
       </ul>
     </motion.div>

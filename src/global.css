@@ -28,3 +28,12 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+
+p {
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+.margin-btm {
+  margin-bottom: 10em;
+}

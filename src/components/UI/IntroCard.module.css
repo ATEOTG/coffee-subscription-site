@@ -1,0 +1,25 @@
+.intro-card--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding: 9.1em 2em;
+  border-radius: 10px;
+  color: var(--cream);
+}
+
+.intro-card--cont h1,
+p {
+  text-align: center;
+}
+
+.intro-card--cont h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 4rem;
+}
+
+.intro-card--cont p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  opacity: 0.8;
+}
