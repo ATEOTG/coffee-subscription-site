@@ -25,7 +25,7 @@ body {
 }
 
 .center {
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
 }
 
@@ -36,4 +36,8 @@ p {
 
 .margin-btm {
   margin-bottom: 10em;
+}
+
+.border-radius {
+  border-radius: 10px;
 }

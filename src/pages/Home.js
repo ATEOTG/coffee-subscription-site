@@ -1,4 +1,5 @@
 import HomeCollection from "../components/Home/HomeCollection";
+import HomeFeature from "../components/Home/HomeFeature";
 import IntroCard from "../components/UI/IntroCard";
 import classes from "./Home.module.css";
 
@@ -14,6 +15,7 @@ function Home() {
         buttonText={"Create your plan"}
       />
       <HomeCollection />
+      <HomeFeature />
     </section>
   );
 }

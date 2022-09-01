@@ -1,0 +1,43 @@
+.home-feature--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feature-intro--cont {
+  background: var(--blue);
+  padding-top: 5em;
+  padding-bottom: 67em;
+}
+
+.feature-item--cont {
+  width: 80%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  transform: translateY(25%);
+}
+
+.feature-text--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.feature-text--cont h2,
+.feature-intro--cont p {
+  color: var(--cream);
+}
+
+.feature-text--cont h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.8rem;
+}
+
+.feature-text--cont p {
+  padding: 0 1em;
+  opacity: 0.8;
+}

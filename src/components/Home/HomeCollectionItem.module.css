@@ -17,4 +17,5 @@
 
 .collection-item p {
   color: var(--blue);
+  padding: 0 2em;
 }
