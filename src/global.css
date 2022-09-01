@@ -29,6 +29,12 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", sans-serif;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 25px;

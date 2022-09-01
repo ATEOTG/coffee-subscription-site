@@ -1,4 +1,5 @@
 import HomeCollection from "../components/Home/HomeCollection";
+import HomeExplanation from "../components/Home/HomeExplanation";
 import HomeFeature from "../components/Home/HomeFeature";
 import IntroCard from "../components/UI/IntroCard";
 import classes from "./Home.module.css";
@@ -16,6 +17,7 @@ function Home() {
       />
       <HomeCollection />
       <HomeFeature />
+      <HomeExplanation />
     </section>
   );
 }

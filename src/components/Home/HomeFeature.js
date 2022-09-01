@@ -6,7 +6,7 @@ import truckIcon from "../../assets/home/desktop/icon-truck.svg";
 
 function HomeFeature() {
   return (
-    <div className={classes["home-feature--cont"]}>
+    <div className={`${classes["home-feature--cont"]} ${"margin-btm"}`}>
       <div
         className={`${
           classes["feature-intro--cont"]

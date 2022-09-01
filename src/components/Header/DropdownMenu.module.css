@@ -6,12 +6,14 @@
   height: 100vh;
   padding-top: 2em;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  transform: translateY(4%);
+  transform: translateY(7%);
 
-  background: linear-gradient(#fefcf7 25%, 40%, #fefcf700 90%);
+  background: linear-gradient(#fefcf7 20%, 50%, #fefcf71a 60%);
+  overflow: hidden;
+  z-index: 1000;
 }
 
 .dropdown-cont ul {

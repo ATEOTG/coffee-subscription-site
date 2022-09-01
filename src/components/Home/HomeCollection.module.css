@@ -6,7 +6,6 @@
 }
 
 .collection-cont h1 {
-  font-family: "Fraunces", sans-serif;
   font-size: 4rem;
   background: -webkit-linear-gradient(var(--grey), var(--cream));
   background-clip: text;

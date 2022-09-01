@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MenuIconOpen from "../svg/MenuIconOpen";
 import MenuIconClose from "../svg/MenuIconClose";
@@ -24,6 +24,12 @@ const mobileMenuVariants = {
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    isMenuOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isMenuOpen]);
 
   function menuStateHandler() {
     setIsMenuOpen((prevState) => !prevState);

@@ -1,0 +1,30 @@
+.explanation-card--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+}
+
+.explanation-item--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.explanation-item--cont .number,
+.explanation-item--cont h3 {
+  font-family: "Fraunces", sans-serif;
+}
+.explanation-item--cont .number {
+  color: var(--orange);
+  font-size: 7.2rem;
+}
+
+.explanation-item--cont h3 {
+  font-size: 2.8rem;
+}
+
+.explanation-item--cont:last-child p {
+  padding: 0 0.5em;
+}

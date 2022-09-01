@@ -1,0 +1,10 @@
+.home-explanation--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7em;
+}
+.home-explanation--cont h2 {
+  font-size: 2.4rem;
+  color: var(--grey);
+}

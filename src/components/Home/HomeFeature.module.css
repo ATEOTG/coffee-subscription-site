@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 70em;
 }
 
 .feature-intro--cont {
@@ -33,7 +34,6 @@
 }
 
 .feature-text--cont h2 {
-  font-family: "Fraunces", sans-serif;
   font-size: 2.8rem;
 }
 
