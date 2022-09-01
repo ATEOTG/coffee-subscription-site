@@ -1,0 +1,34 @@
+.quality-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--blue);
+  margin-top: 20em;
+  padding-bottom: 4em;
+}
+
+.quality-cont img {
+  width: 85%;
+  transform: translateY(-50%);
+}
+.quality-text--cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
+  transform: translateY(-5%);
+}
+
+.quality-text--cont h2,
+.quality-text--cont p {
+  color: var(--cream);
+}
+
+.quality-text--cont h2 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.quality-text--cont p {
+  opacity: 0.8;
+}

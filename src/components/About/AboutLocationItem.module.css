@@ -1,0 +1,22 @@
+.about-item--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+
+.about-item-text--cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about-item-text--cont h2,
+.about-item-text--cont p {
+  color: var(--blue);
+}
+
+.about-item-text--cont h2 {
+  text-align: center;
+  font-size: 2.8rem;
+}

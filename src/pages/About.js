@@ -1,4 +1,5 @@
 import AboutCommitment from "../components/About/AboutCommitment";
+import AboutLocation from "../components/About/AboutLocation";
 import AboutQuality from "../components/About/AboutQuality";
 import IntroCard from "../components/UI/IntroCard";
 import classes from "./About.module.css";
@@ -15,6 +16,7 @@ function About() {
       />
       <AboutCommitment />
       <AboutQuality />
+      <AboutLocation />
     </section>
   );
 }
