@@ -1,0 +1,50 @@
+.footer,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  gap: 5em;
+  padding: 5em;
+  background: var(--blue);
+}
+
+.footer-logo path:first-child {
+  fill: #fff;
+}
+
+.footer-links {
+  gap: 2em;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+  color: var(--grey);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.92px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+  color: var(--cream);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.footer-icons svg {
+  cursor: pointer;
+}
+
+.footer-icons svg:hover path {
+  transition: all 0.3s;
+  fill: var(--orange);
+}

@@ -4,18 +4,23 @@ import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import About from "./pages/About";
 import Subscribe from "./pages/Subscribe";
+import Footer from "./components/Footer/Footer";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/subscribe" element={<Subscribe />} />
-      </Routes>
-    </main>
+    <Fragment>
+      <main>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/subscribe" element={<Subscribe />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Fragment>
   );
 }
 
