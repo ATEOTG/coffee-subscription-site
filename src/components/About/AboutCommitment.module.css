@@ -1,0 +1,26 @@
+.commitment-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.commitment-cont img {
+  width: 100%;
+}
+
+.commitment-text--cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.commitment-text--cont h2 {
+  color: var(--blue);
+  font-size: 3.2rem;
+}
+
+.commitment-text--cont p {
+  color: var(--blue);
+  opacity: 0.8;
+}

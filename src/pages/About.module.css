@@ -1,0 +1,5 @@
+.about-background--img {
+  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+  background-size: cover;
+  background-position: center;
+}

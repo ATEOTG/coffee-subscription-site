@@ -9,7 +9,7 @@ function IntroCard(props) {
     <div className={classNameDiv}>
       <h1> {props.header}</h1>
       <p> {props.paragraph}</p>
-      <Button buttonText={props.buttonText} />
+      {props.hasButton && <Button buttonText={props.buttonText} />}
     </div>
   );
 }
