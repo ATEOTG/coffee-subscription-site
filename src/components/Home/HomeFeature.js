@@ -7,11 +7,7 @@ import truckIcon from "../../assets/home/desktop/icon-truck.svg";
 function HomeFeature() {
   return (
     <div className={`${classes["home-feature--cont"]} ${"margin-btm"}`}>
-      <div
-        className={`${
-          classes["feature-intro--cont"]
-        } ${"center"} ${"border-radius"}`}
-      >
+      <div className={`${classes["feature-intro--cont"]}  ${"border-radius"}`}>
         <div className={classes["feature-text--cont"]}>
           <h2>Why choose us?</h2>
           <p>

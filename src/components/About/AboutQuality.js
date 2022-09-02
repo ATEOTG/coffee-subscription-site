@@ -6,7 +6,7 @@ function AboutQuality() {
     <div
       className={`${
         classes["quality-cont"]
-      } ${"center"} ${"border-radius"} ${"margin-btm"}`}
+      } ${"border-radius"} ${"margin-btm"}`}
     >
       <img
         className="border-radius"

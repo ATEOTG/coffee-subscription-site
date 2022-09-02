@@ -1,0 +1,8 @@
+.arrow {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+.arrow.close {
+  transform: rotate(0deg);
+}

@@ -1,0 +1,5 @@
+.accordion-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 11em;
+}

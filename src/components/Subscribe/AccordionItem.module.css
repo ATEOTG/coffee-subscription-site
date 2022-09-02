@@ -1,0 +1,44 @@
+.accordion-item--cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.accordion-header--cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header--cont h2 {
+  width: 70%;
+  font-size: 2.4rem;
+  color: var(--grey);
+}
+
+.accordion-options--cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2.5em;
+  background: #f4f1eb;
+}
+
+.accordion-body h3,
+.accordion-body p {
+  color: var(--blue);
+}
+
+.accordion-body h3 {
+  font-size: 2.4rem;
+}
+
+.accordion-body p {
+  text-align: left;
+}

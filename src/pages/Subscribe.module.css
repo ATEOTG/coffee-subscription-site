@@ -1,0 +1,10 @@
+.subscribe-background--img {
+  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.explanation-cont {
+  padding: 7em 1em;
+  background: var(--blue);
+}

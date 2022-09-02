@@ -3,7 +3,7 @@ import classes from "./IntroCard.module.css";
 function IntroCard(props) {
   const classNameDiv = `${classes["intro-card--cont"]} ${
     props.background
-  } ${"margin-btm"} ${"border-radius"} ${"center"}`;
+  } ${"margin-btm"} ${"border-radius"}`;
 
   return (
     <div className={classNameDiv}>

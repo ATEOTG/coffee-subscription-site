@@ -6,7 +6,7 @@ import AustraliaIcon from "../svg/AustraliaIcon";
 
 function AboutLocation() {
   return (
-    <div className={`${classes["location-cont"]} ${"center"} ${"margin-btm"}`}>
+    <div className={`${classes["location-cont"]}  ${"margin-btm"}`}>
       <h2 className={classes["header-text"]}>Our headquarters</h2>
       <div className={classes["location-item--cont"]}>
         <AboutLocationItem

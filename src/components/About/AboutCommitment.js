@@ -3,9 +3,7 @@ import commitmentImage from "../../assets/about/mobile/image-commitment.jpg";
 
 function AboutCommitment() {
   return (
-    <div
-      className={`${classes["commitment-cont"]} ${"center"} ${"margin-btm"}`}
-    >
+    <div className={`${classes["commitment-cont"]} ${"margin-btm"}`}>
       <img
         src={commitmentImage}
         alt="barista making coffee"
