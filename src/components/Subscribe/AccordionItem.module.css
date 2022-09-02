@@ -22,6 +22,10 @@
   gap: 2em;
 }
 
+.accordion-options--cont.close {
+  display: none;
+}
+
 .accordion-body {
   display: flex;
   flex-direction: column;
@@ -41,4 +45,12 @@
 
 .accordion-body p {
   text-align: left;
+}
+
+.accordion-body.selected {
+  background: var(--cyan);
+}
+.accordion-body.selected h3,
+.accordion-body.selected p {
+  color: #fff;
 }
