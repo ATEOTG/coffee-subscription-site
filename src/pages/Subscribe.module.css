@@ -6,5 +6,7 @@
 
 .explanation-cont {
   padding: 7em 1em;
-  background: var(--blue);
+  background-image: url("../assets/plan/mobile/bg-steps.png");
+  background-size: cover;
+  background-position: center;
 }

@@ -1,13 +1,25 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { selectionActions } from "../../store";
 import classes from "./AccordionItem.module.css";
 import ArrowIcon from "../svg/ArrowIcon";
 
 function AccordionItem(props) {
+  const dispatch = useDispatch();
   const firstSelection = useRef();
   const secondSelection = useRef();
   const thirdSelection = useRef();
+  const selections = {
+    1: firstSelection,
+    2: secondSelection,
+    3: thirdSelection,
+  };
   const [isOpen, setIsOpen] = useState(true);
   const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    setSelected(selections[props.default].current);
+  }, []);
 
   function accordionHandler() {
     setIsOpen((prevState) => !prevState);
@@ -15,6 +27,29 @@ function AccordionItem(props) {
 
   function selectedHandler(ele) {
     setSelected(ele.currentTarget);
+    const value = ele.currentTarget.firstChild.innerHTML;
+    if (props.identifier === "questionDrink") {
+      dispatch(selectionActions.drinkOption(value));
+    }
+    if (props.identifier === "questionType") {
+      dispatch(selectionActions.typeOption(value));
+    }
+    if (props.identifier === "questionMuch") {
+      dispatch(selectionActions.muchOption(value));
+    }
+    if (props.identifier === "questionGrind") {
+      dispatch(selectionActions.grindOption(value));
+    }
+    if (props.identifier === "questionOften") {
+      const words = value.split(" ");
+      const word = words
+        .map((word) => {
+          return word[0].toUpperCase() + word.substring(1);
+        })
+        .join(" ");
+
+      dispatch(selectionActions.oftenOption(word));
+    }
   }
 
   return (
@@ -35,7 +70,7 @@ function AccordionItem(props) {
             selected === firstSelection.current ? classes.selected : ""
           }`}
         >
-          <h3> {props.firstText}</h3>
+          <h3>{props.firstText}</h3>
           <p>{props.firstDesc}</p>
         </div>
         <div
@@ -45,7 +80,7 @@ function AccordionItem(props) {
             selected === secondSelection.current ? classes.selected : ""
           }`}
         >
-          <h3> {props.secondText}</h3>
+          <h3>{props.secondText}</h3>
           <p>{props.secondDesc}</p>
         </div>
         <div
@@ -55,7 +90,7 @@ function AccordionItem(props) {
             selected === thirdSelection.current ? classes.selected : ""
           }`}
         >
-          <h3> {props.thirdText}</h3>
+          <h3>{props.thirdText}</h3>
           <p>{props.thirdDesc}</p>
         </div>
       </div>

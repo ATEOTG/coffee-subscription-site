@@ -2,10 +2,11 @@ import classes from "./Subscribe.module.css";
 import IntroCard from "../components/UI/IntroCard";
 import ExplanationCard from "../components/UI/ExplanationCard";
 import Accordion from "../components/Subscribe/Accordion";
+import SubscribeSummary from "../components/Subscribe/SubscribeSummary";
 
 function Subscribe() {
   return (
-    <section>
+    <section className="margin-btm">
       <div className="center">
         <IntroCard
           background={classes["subscribe-background--img"]}
@@ -23,6 +24,7 @@ function Subscribe() {
         </div>
       </div>
       <Accordion />
+      <SubscribeSummary />
     </section>
   );
 }
