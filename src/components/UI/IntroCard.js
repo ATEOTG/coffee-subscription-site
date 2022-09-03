@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import classes from "./IntroCard.module.css";
 function IntroCard(props) {
@@ -9,7 +10,12 @@ function IntroCard(props) {
     <div className={classNameDiv}>
       <h1> {props.header}</h1>
       <p> {props.paragraph}</p>
-      {props.hasButton && <Button buttonText={props.buttonText} />}
+
+      {props.hasButton && (
+        <Link to="/subscribe">
+          <Button buttonText={props.buttonText} />
+        </Link>
+      )}
     </div>
   );
 }
