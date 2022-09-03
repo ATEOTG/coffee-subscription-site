@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--blue);
+  background-image: url("../../assets/about/mobile/bg-quality.png");
+  background-position: center;
+  background-size: cover;
   margin-top: 20em;
   padding-bottom: 4em;
 }

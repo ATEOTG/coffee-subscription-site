@@ -7,7 +7,9 @@
 }
 
 .feature-intro--cont {
-  background: var(--blue);
+  background-image: url("../../assets/about/mobile/bg-quality.png");
+  background-position: center;
+  background-size: cover;
   padding-top: 5em;
   padding-bottom: 67em;
 }

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectionActions } from "../../store";
 import classes from "./AccordionItem.module.css";
 import ArrowIcon from "../svg/ArrowIcon";
@@ -9,16 +9,34 @@ function AccordionItem(props) {
   const firstSelection = useRef();
   const secondSelection = useRef();
   const thirdSelection = useRef();
-  const selections = {
-    1: firstSelection,
-    2: secondSelection,
-    3: thirdSelection,
-  };
+  const drink = useSelector((state) => state.drink);
+  const type = useSelector((state) => state.type);
+  const much = useSelector((state) => state.much);
+  const grind = useSelector((state) => state.grind);
+  const often = useSelector((state) => state.often);
+  const amount = useSelector((state) => state.amount);
+  const stateArr = [drink, type, much, grind, often, amount];
+
   const [isOpen, setIsOpen] = useState(true);
   const [selected, setSelected] = useState("");
 
   useEffect(() => {
-    setSelected(selections[props.default].current);
+    const firstOption = firstSelection.current.firstChild.innerHTML;
+    const secondOption = secondSelection.current.firstChild.innerHTML;
+    const thirdOption = thirdSelection.current.firstChild.innerHTML;
+
+    for (const value of stateArr) {
+      if (value.toUpperCase() === firstOption.toUpperCase()) {
+        setSelected(firstSelection.current);
+      }
+      if (value.toUpperCase() === secondOption.toUpperCase()) {
+        setSelected(secondSelection.current);
+      }
+      if (value.toUpperCase() === thirdOption.toUpperCase()) {
+        setSelected(thirdSelection.current);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function accordionHandler() {
