@@ -51,12 +51,22 @@ function Modal(props) {
             <h2 className={classes["modal-header"]}>Order Summary</h2>
             <div className={classes["modal-text--cont"]}>
               <h2>
-                “I drink my coffee as{" "}
-                <span className={classes.custom}>{drink}</span>, with a{" "}
-                <span className={classes.custom}>{type}</span> type of bean.{" "}
-                <span className={classes.custom}>{much}</span> ground ala{" "}
-                <span className={classes.custom}>{grind}</span>, sent to me{" "}
-                <span className={classes.custom}>{often}</span>.”
+                “I drink my coffee{" "}
+                {drink === "Filter" || drink === "Espresso" ? "as" : "using"}{" "}
+                <span className={classes.custom}>
+                  {drink}
+                  {drink === "Capsule" ? "s" : ""}
+                </span>
+                , with a <span className={classes.custom}>{type}</span> type of
+                bean. <span className={classes.custom}>{much}</span>{" "}
+                {drink === "Capsule" ? (
+                  ""
+                ) : (
+                  <span>
+                    ground ala <span className={classes.custom}>{grind}</span>,{" "}
+                  </span>
+                )}{" "}
+                sent to me <span className={classes.custom}>{often}</span>.”
               </h2>
               <p>
                 Is this correct? You can proceed to checkout or go back to plan
