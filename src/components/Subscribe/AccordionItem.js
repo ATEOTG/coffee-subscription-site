@@ -74,12 +74,24 @@ function AccordionItem(props) {
     <div className={classes["accordion-item--cont"]}>
       <div className={classes["accordion-header--cont"]}>
         <h2>{props.header}</h2>
-        <ArrowIcon onClick={accordionHandler} isArrowClicked={isOpen} />
+
+        {drink === "Capsule" && props.identifier === "questionGrind" ? (
+          <ArrowIcon />
+        ) : (
+          <ArrowIcon onClick={accordionHandler} isArrowClicked={isOpen} />
+        )}
       </div>
+
       <div
         className={`${classes["accordion-options--cont"]} ${
           isOpen ? "" : classes.close
-        }`}
+        } 
+        ${
+          drink === "Capsule" && props.identifier === "questionGrind"
+            ? classes["capsule-selected"]
+            : ""
+        }
+        `}
       >
         <div
           onClick={selectedHandler}

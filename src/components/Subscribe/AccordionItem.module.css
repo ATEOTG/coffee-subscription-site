@@ -26,6 +26,14 @@
   display: none;
 }
 
+.capsule-selected--arrow {
+  cursor: not-allowed;
+}
+
+.accordion-options--cont.capsule-selected {
+  display: none;
+}
+
 .accordion-body {
   display: flex;
   flex-direction: column;
