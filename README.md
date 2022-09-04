@@ -24,3 +24,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- Redux
+- React Router
+- Framer Motion
