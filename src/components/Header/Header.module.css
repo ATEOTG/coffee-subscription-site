@@ -8,9 +8,16 @@
 }
 
 .image {
+  max-width: 162px;
   width: 50%;
 }
 
 .header nav {
   position: relative;
+}
+
+@media (min-width: 48em) {
+  .image {
+    max-width: 236px;
+  }
 }

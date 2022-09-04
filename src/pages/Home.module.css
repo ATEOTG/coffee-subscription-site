@@ -3,3 +3,9 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: 48em) {
+  .home-background--img {
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+  }
+}

@@ -1,6 +1,7 @@
 function MenuIconOpen(props) {
   return (
     <svg
+      className="menu-open"
       onClick={props.onClick}
       width="16"
       height="15"

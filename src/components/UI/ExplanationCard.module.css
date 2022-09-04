@@ -28,3 +28,29 @@
 .explanation-item--cont:last-child p {
   padding: 0 0.5em;
 }
+
+@media (min-width: 48em) {
+  .explanation-card--cont {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+  }
+
+  .explanation-item--cont {
+    gap: 4em;
+    align-items: initial;
+  }
+
+  .explanation-item--cont p {
+    text-align: initial;
+  }
+
+  .explanation-item--cont h3 {
+    max-width: 22.5233rem;
+  }
+
+  .explanation-item--cont:last-child p {
+    padding: 0;
+  }
+}

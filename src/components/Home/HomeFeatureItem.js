@@ -4,8 +4,10 @@ function HomeFeatureItem(props) {
   return (
     <div className={`${classes["feature-item"]} ${"border-radius"}`}>
       <img src={props.image} alt={props.alt} />
-      <h2>{props.header}</h2>
-      <p>{props.description}</p>
+      <div className={classes["feature-text--cont"]}>
+        <h2>{props.header}</h2>
+        <p>{props.description}</p>
+      </div>
     </div>
   );
 }

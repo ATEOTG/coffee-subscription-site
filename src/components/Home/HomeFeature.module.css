@@ -43,3 +43,24 @@
   padding: 0 1em;
   opacity: 0.8;
 }
+
+@media (min-width: 48em) {
+  .home-feature--cont {
+    margin-bottom: 40em;
+  }
+  .feature-intro--cont {
+    background-image: none;
+    background: var(--blue);
+    padding-bottom: 35em;
+  }
+  .feature-item--cont {
+    transform: translateY(45%);
+  }
+
+  .feature-text--cont h2 {
+    font-size: 3.2rem;
+  }
+  .feature-text--cont p {
+    width: 80%;
+  }
+}

@@ -5,6 +5,8 @@ import MenuIconClose from "../svg/MenuIconClose";
 import logo from "../../assets/shared/desktop/logo.svg";
 import classes from "./Header.module.css";
 import DropdownMenu from "./DropdownMenu";
+import DesktopMenu from "./DesktopMenu";
+import useWindowWidth from "../hook/use-window";
 
 const mobileMenuVariants = {
   hidden: {
@@ -24,12 +26,19 @@ const mobileMenuVariants = {
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { width } = useWindowWidth();
 
   useEffect(() => {
     isMenuOpen
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "auto");
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    width >= 768
+      ? setIsMenuOpen(false)
+      : setIsMenuOpen((prevState) => prevState);
+  }, [width]);
 
   function menuStateHandler() {
     setIsMenuOpen((prevState) => !prevState);
@@ -39,6 +48,7 @@ function Header() {
       <img src={logo} className={classes.image} alt="coffee roaster logo" />
 
       <nav>
+        <DesktopMenu />
         <AnimatePresence mode="wait">
           {!isMenuOpen && (
             <motion.div

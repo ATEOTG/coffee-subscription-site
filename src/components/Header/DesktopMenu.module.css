@@ -1,0 +1,21 @@
+.menu {
+  display: none;
+  gap: 4em;
+}
+
+.menu a {
+  font-weight: 700;
+  letter-spacing: 0.92px;
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.menu a p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 48em) {
+  .menu {
+    display: flex;
+  }
+}

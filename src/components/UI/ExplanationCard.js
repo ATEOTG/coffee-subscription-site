@@ -26,7 +26,7 @@ function ExplanationCard(props) {
         <h3 style={{ color: `${props.color}` }}>Recieve and enjoy!</h3>
         <p style={{ color: `${props.color}` }}>
           We ship your package within 48 hours, freshly roasted. Sit back and
-          enjoy award-winning world-class coffees curated to proved a distinct
+          enjoy award-winning world-class coffees curated to provide a distinct
           tasting experience.
         </p>
       </div>
