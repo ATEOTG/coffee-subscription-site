@@ -18,6 +18,10 @@
     align-items: initial;
   }
 
+  .home-explanation--cont a {
+    max-width: fit-content;
+  }
+
   .step-line--cont {
     max-width: 92.4rem;
     width: 77%;

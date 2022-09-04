@@ -48,3 +48,11 @@
   transition: all 0.3s;
   fill: var(--orange);
 }
+
+@media (min-width: 48em) {
+  .footer-links {
+    transform: translate(5%, -150%);
+    flex-direction: row;
+    gap: 4em;
+  }
+}
