@@ -20,3 +20,17 @@
   text-align: center;
   font-size: 2.8rem;
 }
+
+@media (min-width: 48em) {
+  .about-item--cont {
+    align-items: initial;
+  }
+
+  .about-item-text--cont h2 {
+    text-align: initial;
+  }
+
+  .item-list p {
+    text-align: initial;
+  }
+}

@@ -34,3 +34,33 @@
 .quality-text--cont p {
   opacity: 0.8;
 }
+
+.quality-img--tab {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .quality-cont {
+    background: var(--blue);
+    padding-bottom: 0;
+  }
+
+  .quality-img--mob {
+    display: none;
+  }
+
+  .quality-img--tab {
+    display: block;
+    max-width: 65.4rem;
+  }
+
+  .quality-text--cont {
+    width: 79%;
+  }
+  .quality-text--cont h2 {
+    font-size: 3.2rem;
+  }
+  .quality-text--cont {
+    transform: translateY(-50%);
+  }
+}

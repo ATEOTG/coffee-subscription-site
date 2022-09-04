@@ -50,6 +50,9 @@
 }
 
 @media (min-width: 48em) {
+  .footer {
+    margin-bottom: 10em;
+  }
   .footer-links {
     transform: translate(5%, -150%);
     flex-direction: row;

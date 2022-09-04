@@ -24,3 +24,35 @@
   color: var(--blue);
   opacity: 0.8;
 }
+
+.image-tablet {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .commitment-cont {
+    margin-bottom: 30em;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+  .image-tablet {
+    display: block;
+    max-width: 34.8rem;
+  }
+
+  .commitment-cont {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    align-items: center;
+  }
+
+  .commitment-text--cont {
+    align-items: initial;
+  }
+
+  .commitment-text--cont p {
+    text-align: initial;
+  }
+}

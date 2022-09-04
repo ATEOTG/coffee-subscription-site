@@ -1,5 +1,6 @@
 import classes from "./AboutQuality.module.css";
-import bgQuality from "../../assets/about/mobile/image-quality.jpg";
+import bgQualityMobile from "../../assets/about/mobile/image-quality.jpg";
+import bgQualityTablet from "../../assets/about/tablet/image-quality.jpg";
 
 function AboutQuality() {
   return (
@@ -9,8 +10,13 @@ function AboutQuality() {
       } ${"border-radius"} ${"margin-btm"}`}
     >
       <img
-        className="border-radius"
-        src={bgQuality}
+        className={`${classes["quality-img--mob"]} ${"border-radius"}`}
+        src={bgQualityMobile}
+        alt="white cup with coffee"
+      />
+      <img
+        className={`${classes["quality-img--tab"]} ${"border-radius"}`}
+        src={bgQualityTablet}
         alt="white cup with coffee"
       />
       <div className={classes["quality-text--cont"]}>

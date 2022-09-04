@@ -3,3 +3,9 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: 48em) {
+  .about-background--img {
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+  }
+}

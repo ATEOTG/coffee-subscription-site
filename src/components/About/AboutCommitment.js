@@ -1,14 +1,21 @@
 import classes from "./AboutCommitment.module.css";
-import commitmentImage from "../../assets/about/mobile/image-commitment.jpg";
+import commitmentImageMobile from "../../assets/about/mobile/image-commitment.jpg";
+import commitmentImageTablet from "../../assets/about/tablet/image-commitment.jpg";
 
 function AboutCommitment() {
   return (
     <div className={`${classes["commitment-cont"]} ${"margin-btm"}`}>
       <img
-        src={commitmentImage}
+        src={commitmentImageMobile}
         alt="barista making coffee"
-        className="border-radius"
+        className={`${classes["image-mobile"]} ${"border-radius"}`}
       />
+      <img
+        src={commitmentImageTablet}
+        alt="barista making coffee"
+        className={`${classes["image-tablet"]} ${"border-radius"}`}
+      />
+
       <div className={classes["commitment-text--cont"]}>
         <h2>Our commitment</h2>
         <p>

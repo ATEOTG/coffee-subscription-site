@@ -10,3 +10,15 @@
   flex-direction: column;
   gap: 8em;
 }
+
+@media (min-width: 48em) {
+  .location-cont .header-text {
+    text-align: initial;
+  }
+
+  .location-item--cont {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 0;
+  }
+}
