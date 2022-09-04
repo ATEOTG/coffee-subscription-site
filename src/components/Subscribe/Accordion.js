@@ -1,7 +1,9 @@
 import classes from "./Accordion.module.css";
+import { useSelector } from "react-redux";
 import AccordionItem from "./AccordionItem";
 
 function Accordion() {
+  const much = useSelector((state) => state.much);
   return (
     <div className={`${classes["accordion-cont"]} ${"center"} ${"margin-btm"}`}>
       <AccordionItem
@@ -53,11 +55,17 @@ function Accordion() {
         identifier="questionOften"
         header="How often should we deliver?"
         firstText="Every week"
-        firstDesc="$7.20 per shipment. Includes free first-class shipping."
+        firstDesc={`$${
+          much === "250g" ? "7.20" : much === "500g" ? "13.00" : "22.00"
+        } per shipment. Includes free first-class shipping.`}
         secondText="Every 2 weeks"
-        secondDesc="$9.60 per shipment. Includes free priority shipping."
+        secondDesc={`$${
+          much === "250g" ? "9.60" : much === "500g" ? "17.50" : "32.00"
+        } per shipment. Includes free priority shipping.`}
         thirdText="Every month"
-        thirdDesc="$12.00 per shipment. Includes free priority shipping."
+        thirdDesc={`$${
+          much === "250g" ? "12.00" : much === "500g" ? "22.00" : "42.00"
+        } per shipment. Includes free priority shipping.`}
       />
     </div>
   );
