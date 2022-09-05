@@ -22,3 +22,10 @@
     gap: 0;
   }
 }
+@media (min-width: 90em) {
+  .location-cont {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20em;
+  }
+}

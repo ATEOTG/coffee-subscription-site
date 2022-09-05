@@ -48,6 +48,10 @@ p {
   border-radius: 10px;
 }
 
+section {
+  max-width: 147.6rem;
+}
+
 @media (min-width: 48em) {
   .menu-close,
   .menu-open {

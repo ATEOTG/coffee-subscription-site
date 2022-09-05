@@ -1,6 +1,7 @@
 import classes from "./AboutCommitment.module.css";
 import commitmentImageMobile from "../../assets/about/mobile/image-commitment.jpg";
 import commitmentImageTablet from "../../assets/about/tablet/image-commitment.jpg";
+import commitmentImageDesktop from "../../assets/about/desktop/image-commitment.jpg";
 
 function AboutCommitment() {
   return (
@@ -14,6 +15,11 @@ function AboutCommitment() {
         src={commitmentImageTablet}
         alt="barista making coffee"
         className={`${classes["image-tablet"]} ${"border-radius"}`}
+      />
+      <img
+        src={commitmentImageDesktop}
+        alt="barista making coffee"
+        className={`${classes["image-desktop"]} ${"border-radius"}`}
       />
 
       <div className={classes["commitment-text--cont"]}>

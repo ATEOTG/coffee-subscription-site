@@ -34,3 +34,8 @@
     text-align: initial;
   }
 }
+@media (min-width: 90em) {
+  .about-item-text--cont h2 {
+    font-size: 3.2rem;
+  }
+}

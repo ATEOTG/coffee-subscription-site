@@ -1,6 +1,7 @@
 import classes from "./AboutQuality.module.css";
 import bgQualityMobile from "../../assets/about/mobile/image-quality.jpg";
 import bgQualityTablet from "../../assets/about/tablet/image-quality.jpg";
+import bgQualityDesktop from "../../assets/about/desktop/image-quality.jpg";
 
 function AboutQuality() {
   return (
@@ -19,6 +20,7 @@ function AboutQuality() {
         src={bgQualityTablet}
         alt="white cup with coffee"
       />
+
       <div className={classes["quality-text--cont"]}>
         <h2>Uncompromising quality</h2>
         <p>
@@ -30,6 +32,11 @@ function AboutQuality() {
           and enjoyable.
         </p>
       </div>
+      <img
+        className={`${classes["quality-img--desk"]} ${"border-radius"}`}
+        src={bgQualityDesktop}
+        alt="white cup with coffee"
+      />
     </div>
   );
 }

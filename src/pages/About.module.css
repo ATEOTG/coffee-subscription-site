@@ -9,3 +9,8 @@
     background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
   }
 }
+@media (min-width: 90em) {
+  .about-background--img {
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+  }
+}

@@ -8,13 +8,15 @@ import InstagramIcon from "../svg/InstagramIcon";
 function Footer() {
   return (
     <footer className={`${classes.footer} ${"center"} ${"margin-btm"}`}>
-      <div className={classes["footer-logo"]}>
-        <Logo />
-      </div>
-      <div className={classes["footer-links"]}>
-        <Link to="/home">HOME</Link>
-        <Link to="/about">ABOUT US</Link>
-        <Link to="/subscribe">CREATE YOUR PLAN</Link>
+      <div className={classes["footer-text--cont"]}>
+        <div className={classes["footer-logo"]}>
+          <Logo />
+        </div>
+        <div className={classes["footer-links"]}>
+          <Link to="/home">HOME</Link>
+          <Link to="/about">ABOUT US</Link>
+          <Link to="/subscribe">CREATE YOUR PLAN</Link>
+        </div>
       </div>
       <div className={classes["footer-icons"]}>
         <FacebookIcon />

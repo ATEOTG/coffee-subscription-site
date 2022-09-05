@@ -29,6 +29,10 @@
   display: none;
 }
 
+.image-desktop {
+  display: none;
+}
+
 @media (min-width: 48em) {
   .commitment-cont {
     margin-bottom: 30em;
@@ -49,6 +53,34 @@
   }
 
   .commitment-text--cont {
+    align-items: initial;
+  }
+
+  .commitment-text--cont p {
+    text-align: initial;
+  }
+}
+@media (min-width: 90em) {
+  .commitment-text--cont h2 {
+    font-size: 4rem;
+  }
+
+  .image-tablet {
+    display: none;
+  }
+
+  .image-desktop {
+    display: block;
+  }
+
+  .commitment-cont {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 49fr 61fr;
+  }
+
+  .commitment-text--cont {
+    padding-left: 4em;
     align-items: initial;
   }
 
