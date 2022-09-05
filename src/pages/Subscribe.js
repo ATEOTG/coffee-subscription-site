@@ -29,9 +29,19 @@ function Subscribe() {
           } ${"border-radius"} ${"margin-btm"}`}
         >
           <div className="center">
+            <div className={classes["step-line--cont"]}>
+              <div className={classes["circle-cont"]}>
+                <div className={classes["circle"]}></div>
+                <div className={classes["circle"]}></div>
+                <div className={classes["circle"]}></div>
+                <div className={classes["horizontal-line"]}></div>
+              </div>
+            </div>
+
             <ExplanationCard color="#fff" />
           </div>
         </div>
+
         <Accordion />
         <SubscribeSummary onClick={modalHandler} />
       </section>

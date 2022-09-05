@@ -73,8 +73,18 @@ function Modal(props) {
                 selection if something is off. Subscription discount codes can
                 also be redeemed at the checkout.
               </p>
-              <div onClick={() => props.setShowModal(false)}>
+              <div
+                className={classes["checkout-mob"]}
+                onClick={() => props.setShowModal(false)}
+              >
                 <Button buttonText={`Checkout - $${amount}/mo`} />
+              </div>
+              <div
+                className={classes["checkout-desk"]}
+                onClick={() => props.setShowModal(false)}
+              >
+                <h2>{`$${amount}/mo`}</h2>
+                <Button buttonText={`Checkout`} />
               </div>
             </div>
           </motion.div>

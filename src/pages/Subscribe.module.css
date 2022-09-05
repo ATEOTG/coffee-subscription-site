@@ -5,8 +5,59 @@
 }
 
 .explanation-cont {
+  position: relative;
   padding: 7em 1em;
   background-image: url("../assets/plan/mobile/bg-steps.png");
   background-size: cover;
   background-position: center;
+}
+.circle-cont {
+  display: none;
+}
+
+.step-line--cont {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .subscribe-background--img {
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+
+  .explanation-cont {
+    background-image: none;
+    background: var(--blue);
+    z-index: -100;
+  }
+
+  .step-line--cont {
+    display: block;
+    max-width: 92.4rem;
+    margin-bottom: 4em;
+    width: 77%;
+  }
+
+  .circle-cont {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: var(--blue);
+    border: 2px solid var(--cyan);
+  }
+
+  .horizontal-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(750%);
+    width: 99%;
+    border-top: 2px solid var(--orange);
+    z-index: -10;
+  }
 }

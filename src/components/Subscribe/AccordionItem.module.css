@@ -58,3 +58,27 @@
 .accordion-body.selected p {
   color: #fff;
 }
+
+@media (min-width: 48em) {
+  .accordion-header--cont h2 {
+    width: 80%;
+    font-size: 3.2rem;
+  }
+
+  .accordion-options--cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8em;
+  }
+
+  .accordion-body {
+    gap: 2em;
+  }
+  .accordion-body p {
+    font-size: 1.6rem;
+  }
+
+  .accordion-body {
+    padding: 4em 2.5em 8em 2.5em;
+  }
+}

@@ -32,3 +32,13 @@
   color: var(--cyan);
   text-align: initial;
 }
+
+@media (min-width: 48em) {
+  .order-cont {
+    background-image: none;
+    background: var(--blue);
+  }
+  .order-cont h2 {
+    width: 90%;
+  }
+}

@@ -48,3 +48,59 @@
 .custom {
   color: var(--cyan);
 }
+
+.checkout-desk {
+  display: none;
+}
+.checkout-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-mob button {
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  .checkout-mob {
+    display: none;
+  }
+
+  .checkout-desk {
+    display: block;
+  }
+
+  .checkout-desk {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  div.checkout-desk h2 {
+    font-size: 3.2rem;
+    color: var(--blue);
+    margin-bottom: 0em;
+  }
+
+  .modal {
+    width: 70%;
+  }
+
+  .modal-header {
+    font-size: 4rem;
+    padding: 0.8em 1.2em;
+  }
+
+  .modal-text--cont {
+    padding: 4em 6em 4em 6em;
+  }
+
+  .modal-text--cont h2 {
+    margin-bottom: 0.6em;
+  }
+
+  .modal-text--cont p {
+    width: 90%;
+  }
+}
