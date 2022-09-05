@@ -64,3 +64,27 @@
     width: 80%;
   }
 }
+@media (min-width: 90em) {
+  .home-feature--cont {
+    margin-bottom: 30em;
+  }
+
+  .feature-intro--cont {
+    padding-top: 10em;
+  }
+  .feature-item--cont {
+    flex-direction: row;
+    transform: translateY(95%);
+  }
+
+  .feature-text--cont {
+    transform: translateY(15%);
+  }
+
+  .feature-text--cont h2 {
+    font-size: 4rem;
+  }
+  .feature-text--cont p {
+    width: 44%;
+  }
+}

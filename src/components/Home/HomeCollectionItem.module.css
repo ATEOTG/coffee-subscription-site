@@ -45,3 +45,29 @@
     text-align: initial;
   }
 }
+@media (min-width: 90em) {
+  .collection-item {
+    transform: translate(-5%, -30%);
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .collection-item img {
+    width: 100%;
+    max-width: 25.5rem;
+  }
+
+  .collection-item--cont {
+    align-items: center;
+  }
+
+  .collection-item h2 {
+    margin-top: 1em;
+  }
+
+  .collection-item p {
+    padding: 0;
+    width: 80%;
+    text-align: center;
+  }
+}

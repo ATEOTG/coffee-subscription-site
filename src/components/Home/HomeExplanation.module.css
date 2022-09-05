@@ -56,3 +56,16 @@
     z-index: -10;
   }
 }
+@media (min-width: 90em) {
+  .home-explanation--cont {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20em;
+    align-items: initial;
+  }
+
+  .step-line--cont {
+    max-width: none;
+    width: 75%;
+  }
+}

@@ -6,7 +6,7 @@ import classes from "./Home.module.css";
 
 function Home() {
   return (
-    <section className="center">
+    <section className={`${classes.home} ${"center"}`}>
       <IntroCard
         background={classes["home-background--img"]}
         header="Great coffee made simple."

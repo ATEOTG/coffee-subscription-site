@@ -8,6 +8,11 @@
   letter-spacing: 0.92px;
   text-decoration: none;
   color: var(--grey);
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  color: var(--blue);
 }
 
 .menu a p {

@@ -83,6 +83,10 @@
     margin-bottom: 0em;
   }
 
+  .checkout-desk div button {
+    width: 100%;
+  }
+
   .modal {
     width: 70%;
   }

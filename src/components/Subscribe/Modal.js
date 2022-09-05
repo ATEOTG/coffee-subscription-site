@@ -79,12 +79,11 @@ function Modal(props) {
               >
                 <Button buttonText={`Checkout - $${amount}/mo`} />
               </div>
-              <div
-                className={classes["checkout-desk"]}
-                onClick={() => props.setShowModal(false)}
-              >
+              <div className={classes["checkout-desk"]}>
                 <h2>{`$${amount}/mo`}</h2>
-                <Button buttonText={`Checkout`} />
+                <div onClick={() => props.setShowModal(false)}>
+                  <Button buttonText={`Checkout`} />
+                </div>
               </div>
             </div>
           </motion.div>

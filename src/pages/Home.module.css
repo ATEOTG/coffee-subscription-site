@@ -1,3 +1,7 @@
+.home {
+  max-width: 147.6rem;
+}
+
 .home-background--img {
   background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
   background-size: cover;
@@ -7,5 +11,11 @@
 @media (min-width: 48em) {
   .home-background--img {
     background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+  }
+}
+
+@media (min-width: 90em) {
+  .home-background--img {
+    background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
   }
 }

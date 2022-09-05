@@ -36,3 +36,22 @@ p {
     font-size: 4.8rem;
   }
 }
+
+@media (min-width: 90em) {
+  .intro-card--cont {
+    padding: 11.9em 10em;
+  }
+  .intro-card--cont h1,
+  .intro-card--cont p {
+    text-align: initial;
+  }
+
+  .intro-card--cont h1 {
+    font-size: 7.2rem;
+    width: 50%;
+  }
+
+  .intro-card--cont p {
+    width: 34%;
+  }
+}

@@ -54,3 +54,16 @@
     padding: 0;
   }
 }
+@media (min-width: 90em) {
+  .explanation-card--cont {
+    gap: 7em;
+  }
+
+  .explanation-item--cont p {
+    width: 80%;
+  }
+
+  .explanation-item--cont h3 {
+    font-size: 3.2rem;
+  }
+}

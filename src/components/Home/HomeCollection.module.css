@@ -28,3 +28,20 @@
     font-size: 9.5rem;
   }
 }
+@media (min-width: 90em) {
+  .collection-cont {
+    margin: 0 auto;
+    max-width: none;
+    margin-bottom: 10em;
+  }
+
+  .collection-item--cont {
+    width: 90%;
+    max-width: 116.7rem;
+    flex-direction: row;
+    gap: 0em;
+  }
+  .collection-cont h1 {
+    font-size: 16rem;
+  }
+}

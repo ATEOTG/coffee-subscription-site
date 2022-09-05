@@ -57,3 +57,32 @@
     padding: 0;
   }
 }
+@media (min-width: 90em) {
+  .feature-item {
+    flex-direction: column;
+    padding: 6em 4em;
+    gap: 4em;
+  }
+
+  .feature-item img {
+    width: 28.5%;
+    margin-bottom: 0.5em;
+  }
+
+  .feature-item:last-child img {
+    margin-top: 2.9em;
+  }
+
+  .feature-item h2 {
+    margin-bottom: 2rem;
+  }
+
+  .feature-text--cont {
+    align-items: center;
+  }
+
+  .feature-text--cont p {
+    text-align: center;
+    padding: 0;
+  }
+}

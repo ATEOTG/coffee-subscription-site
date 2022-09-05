@@ -62,3 +62,13 @@ p {
     width: 90%;
   }
 }
+
+@media (min-width: 90em) {
+  p {
+    font-size: 1.6rem;
+  }
+
+  .margin-btm {
+    margin-bottom: 20em;
+  }
+}
