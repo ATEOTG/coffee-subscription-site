@@ -1,6 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+const initialStateOptions = {
   drink: "Filter",
   type: "Decaf",
   much: "250g",
@@ -11,7 +11,7 @@ const initialState = {
 
 const selectionSlice = createSlice({
   name: "selection",
-  initialState: initialState,
+  initialState: initialStateOptions,
   reducers: {
     drinkOption(state, action) {
       state.drink = action.payload;

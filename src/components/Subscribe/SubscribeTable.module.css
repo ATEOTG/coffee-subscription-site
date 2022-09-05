@@ -7,6 +7,7 @@
   display: flex;
   gap: 2.5em;
   border-bottom: 1px solid var(--grey);
+  opacity: 0.8;
   padding: 2em 0;
 }
 
@@ -19,8 +20,16 @@
 }
 
 .table-item h2 {
-  color: var(--grey);
   font-size: 2.4rem;
+}
+
+.table-number {
+  color: var(--grey);
+  opacity: 0.8;
+}
+
+.table-text {
+  color: var(--blue);
 }
 
 .table-cont {

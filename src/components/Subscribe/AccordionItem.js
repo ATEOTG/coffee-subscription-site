@@ -72,7 +72,16 @@ function AccordionItem(props) {
 
   return (
     <div className={classes["accordion-item--cont"]}>
-      <div className={classes["accordion-header--cont"]}>
+      <div
+        className={classes["accordion-header--cont"]}
+        style={{
+          opacity: `${
+            drink === "Capsule" && props.identifier === "questionGrind"
+              ? "0.5"
+              : "1"
+          }`,
+        }}
+      >
         <h2>{props.header}</h2>
 
         {drink === "Capsule" && props.identifier === "questionGrind" ? (

@@ -54,7 +54,8 @@
     margin: 0 auto;
   }
 
-  .summary-button button {
+  .summary-button div {
+    width: fit-content;
     justify-self: flex-end;
   }
 }
