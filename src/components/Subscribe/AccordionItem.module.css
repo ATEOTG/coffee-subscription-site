@@ -36,6 +36,12 @@
   gap: 1em;
   padding: 2.5em;
   background: #f4f1eb;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.accordion-body:hover {
+  background: var(--orange);
 }
 
 .accordion-body h3,
@@ -80,5 +86,19 @@
 
   .accordion-body {
     padding: 4em 2.5em 8em 2.5em;
+  }
+}
+@media (min-width: 90em) {
+  .accordion-header--cont h2 {
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+
+  .accordion-options--cont {
+    gap: 2.5em;
+  }
+
+  .accordion-body {
+    padding: 4em 3em 9em 3em;
   }
 }

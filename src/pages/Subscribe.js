@@ -5,6 +5,7 @@ import Accordion from "../components/Subscribe/Accordion";
 import SubscribeSummary from "../components/Subscribe/SubscribeSummary";
 import { Fragment, useState } from "react";
 import Modal from "../components/Subscribe/Modal";
+import SubscribeTable from "../components/Subscribe/SubscribeTable";
 
 function Subscribe() {
   const [showModal, setShowModal] = useState(false);
@@ -15,8 +16,8 @@ function Subscribe() {
   return (
     <Fragment>
       <Modal showModal={showModal} setShowModal={setShowModal} />
-      <section className="margin-btm">
-        <div className="center">
+      <section className={`${classes.subscribe} ${"margin-btm"}`}>
+        <div className={`${classes["subscribe-intro"]} ${"center"}`}>
           <IntroCard
             background={classes["subscribe-background--img"]}
             header="Create a plan"
@@ -41,9 +42,13 @@ function Subscribe() {
             <ExplanationCard color="#fff" />
           </div>
         </div>
-
-        <Accordion />
-        <SubscribeSummary onClick={modalHandler} />
+        <div className={classes["selection-section--cont"]}>
+          <SubscribeTable />
+          <div className={classes["selection-cta--cont"]}>
+            <Accordion />
+            <SubscribeSummary onClick={modalHandler} />
+          </div>
+        </div>
       </section>
     </Fragment>
   );

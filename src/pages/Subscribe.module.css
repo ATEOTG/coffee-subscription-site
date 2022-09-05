@@ -61,3 +61,30 @@
     z-index: -10;
   }
 }
+
+@media (min-width: 90em) {
+  .subscribe-background--img {
+    background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg");
+  }
+
+  .subscribe {
+    width: 90%;
+    margin: 0 auto 20em auto;
+  }
+  .subscribe-intro {
+    width: 100%;
+  }
+
+  .step-line--cont {
+    max-width: none;
+    width: 75%;
+  }
+
+  .selection-section--cont {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: 20fr 80fr;
+  }
+}

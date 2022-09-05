@@ -34,7 +34,7 @@ function SubscribeSummary(props) {
           sent to me <span className={classes.custom}>{often}</span>.”
         </h2>
       </div>
-      <div onClick={props.onClick}>
+      <div className={classes["summary-button"]} onClick={props.onClick}>
         <Button buttonText="Create my plan!" />
       </div>
     </div>

@@ -42,3 +42,19 @@
     width: 90%;
   }
 }
+
+@media (min-width: 90em) {
+  .order-cont {
+    padding: 4.5em 6.5em;
+  }
+
+  .summary-button {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .summary-button button {
+    justify-self: flex-end;
+  }
+}
