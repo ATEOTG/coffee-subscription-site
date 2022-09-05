@@ -12,7 +12,7 @@ function Accordion() {
         firstText="Capsule"
         firstDesc="Compatible with Nepresso systems and similar brewers"
         secondText="Filter"
-        secondDesc="For pour over or drip methods like Aeropress, Chemex, and V60"
+        secondDesc="For pour-over or drip methods like Aeropress, Chemex, and V60"
         thirdText="Espresso"
         thirdDesc="Dense and finely ground beans for an intense, flavorful experience"
       />
