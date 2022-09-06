@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import classes from "./IntroCard.module.css";
 function IntroCard(props) {
+  const navigate = useNavigate();
+
   const classNameDiv = `${classes["intro-card--cont"]} ${
     props.background
   } ${"margin-btm"} ${"border-radius"}`;
@@ -12,9 +14,12 @@ function IntroCard(props) {
       <p> {props.paragraph}</p>
 
       {props.hasButton && (
-        <Link to="/subscribe">
-          <Button buttonText={props.buttonText} />
-        </Link>
+        <div>
+          <Button
+            onClick={() => navigate("/subscribe")}
+            buttonText={props.buttonText}
+          />
+        </div>
       )}
     </div>
   );
