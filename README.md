@@ -3,6 +3,8 @@
 
 A multi-page Coffee subscription site that allows users to select their plan on the subscription page!
 
+- Live Site URL: [https://coffee-subscription-site.web.app](https://coffee-subscription-site.web.app/home)
+
 ### Screenshots
 
 ## On Mobile 
@@ -16,11 +18,6 @@ A multi-page Coffee subscription site that allows users to select their plan on 
 ## On Desktop
 
 ![Screen Shot 2022-09-05 at 19 59 03](https://user-images.githubusercontent.com/25332391/188522116-d443cccc-6273-42b3-84ae-0a031d2a6cc6.png)
-
-
-### Links
-
-- Live Site URL: [https://coffee-subscription-site.web.app](https://coffee-subscription-site.web.app/home)
 
 ## My process
 
